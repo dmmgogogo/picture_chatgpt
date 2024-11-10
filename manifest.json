@@ -1,0 +1,31 @@
+{
+    "manifest_version": 3,
+    "name": "XMM-AI智能分析",
+    "version": "1.0",
+    "description": "XMM-AI图片智能分析助手",
+    "permissions": [
+      "contextMenus",
+      "storage",
+      "activeTab"
+    ],
+    "host_permissions": [
+        "https://api.openai.com/*",
+        "https://*.twimg.com/*",
+        "https://*.twitter.com/*"
+    ],
+    "background": {
+      "service_worker": "background.js"
+    },
+    "icons": {
+      "48": "static/alert-icon-48.png",
+      "128": "static/alert-icon-128.png"
+    },
+    "options_page": "options.html",
+    "action": {
+      "default_icon": {
+        "48": "static/alert-icon-48.png",
+        "128": "static/alert-icon-128.png"
+      },
+      "default_popup": "popup.html"
+    }
+  }

@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>分析结果</title>
+    <style>
+        body {
+            padding: 20px;
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            max-width: 800px;
+            margin: 0 auto;
+        }
+        #loading {
+            text-align: center;
+            padding: 20px;
+            color: #666;
+            font-size: 16px;
+        }
+        #error {
+            display: none;
+            color: #ff4444;
+            padding: 10px;
+            background-color: #ffe6e6;
+            border-radius: 4px;
+            margin: 10px 0;
+        }
+        #imagePreview {
+            text-align: center;
+            margin: 20px 0;
+        }
+        #analysisResult {
+            background-color: #f9f9f9;
+            padding: 20px;
+            border-radius: 4px;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <h1>图片分析结果</h1>
+    <div id="loading">正在分析中，请稍候...</div>
+    <div id="error"></div>
+    <div id="analysisResult" style="color: blue;"></div>
+    <div id="imagePreview"></div>
+    <script src="result.js"></script>
+</body>
+</html>
