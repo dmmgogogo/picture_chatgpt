@@ -90,6 +90,7 @@ document.addEventListener('DOMContentLoaded', async () => {
                 console.log('API Key retrieved:', data.openaiApiKey ? 'Yes' : 'No');
                 
                 if (!data.openaiApiKey) {
+                    alert('请先在扩展设置中配置OpenAI API密钥');
                     throw new Error('请先在扩展设置中配置OpenAI API密钥');
                 }
 
