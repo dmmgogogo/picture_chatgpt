@@ -9,9 +9,7 @@
       "activeTab"
     ],
     "host_permissions": [
-        "https://api.openai.com/*",
-        "https://*.twimg.com/*",
-        "https://*.twitter.com/*"
+        "*://*/*"
     ],
     "background": {
       "service_worker": "background.js"
