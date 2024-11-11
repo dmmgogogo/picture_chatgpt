@@ -21,7 +21,7 @@ document.addEventListener('DOMContentLoaded', async () => {
                 // 计算新的尺寸，最大宽度为 800px
                 let width = img.width;
                 let height = img.height;
-                const maxWidth = 800;
+                const maxWidth = 950;
                 
                 if (width > maxWidth) {
                     const ratio = maxWidth / width;
@@ -145,11 +145,7 @@ document.addEventListener('DOMContentLoaded', async () => {
 
                     // 显示结果
                     loadingDiv.style.display = 'none';
-                    resultDiv.innerHTML = `
-                        <div style="white-space: pre-line; padding: 15px; background: #f5f5f5; border-radius: 5px;">
-                            ${result.choices[0].message.content}
-                        </div>
-                    `;
+                    resultDiv.innerHTML = marked.parse(`${result.choices[0].message.content}`);
                     
                 } catch (error) {
                     console.error('API Error:', error);
