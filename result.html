@@ -3,12 +3,13 @@
 <head>
     <meta charset="UTF-8">
     <title>分析结果</title>
+    <script src="marked.min.js"></script>
     <style>
         body {
             padding: 20px;
             font-family: Arial, sans-serif;
             line-height: 1.6;
-            max-width: 800px;
+            max-width: 900px;
             margin: 0 auto;
         }
         #loading {
@@ -38,10 +39,10 @@
     </style>
 </head>
 <body>
-    <h1>图片分析结果</h1>
+    <h1>分析结果</h1>
     <div id="loading">正在分析中，请稍候...</div>
     <div id="error"></div>
-    <div id="analysisResult" style="color: blue;"></div>
+    <div id="analysisResult"></div>
     <div id="imagePreview"></div>
     <script src="result.js"></script>
 </body>
